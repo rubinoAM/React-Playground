@@ -7,7 +7,7 @@ export default function ListItem(props){
     }
 
     function renderList(){
-        return props.todos.map(item => {
+        return props.todos.map(item => (
             <List.Item key={item.id}>
                 {item.title}
                 <List.Icon
@@ -15,7 +15,7 @@ export default function ListItem(props){
                     name="trash"
                     onClick={() => removeItem(item.id)}/>
             </List.Item>
-        });
+        ));
     }
 
     return(
