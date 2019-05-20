@@ -1,0 +1,18 @@
+{
+    "name": "@bit/semantic-org.semantic-ui-react.internal.style-links",
+    "version": "0.86.0",
+    "homepage": "https://bit.dev/semantic-org/semantic-ui-react/internal/style-links",
+    "main": "dist/StyleLinks.js",
+    "dependencies": {},
+    "devDependencies": {},
+    "peerDependencies": {
+        "react": "^16.3.0"
+    },
+    "componentRootFolder": "components/internal/style-links",
+    "license": "SEE LICENSE IN LICENSE",
+    "bit": {
+        "env": {
+            "compiler": "semantic-org.semantic-ui-react-compiler/compilers/react@1.0.3"
+        }
+    }
+}

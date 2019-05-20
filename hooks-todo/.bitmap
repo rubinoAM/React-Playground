@@ -117,5 +117,30 @@
         "origin": "IMPORTED",
         "originallySharedDir": "src"
     },
+    "lodash.lodash/unique-id@4.17.11": {
+        "files": [
+            {
+                "name": "uniqueId.js",
+                "relativePath": "uniqueId.js",
+                "test": false
+            }
+        ],
+        "mainFile": "uniqueId.js",
+        "rootDir": "components/unique-id",
+        "origin": "IMPORTED"
+    },
+    "semantic-org.semantic-ui-react/internal/style-links@0.86.0": {
+        "files": [
+            {
+                "name": "StyleLinks.js",
+                "relativePath": "StyleLinks.js",
+                "test": false
+            }
+        ],
+        "mainFile": "StyleLinks.js",
+        "rootDir": "components/internal/style-links",
+        "origin": "IMPORTED",
+        "originallySharedDir": "src"
+    },
     "version": "14.1.1"
 }

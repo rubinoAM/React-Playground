@@ -8,7 +8,9 @@
     "react-scripts": "3.0.1",
     "@bit/semantic-org.semantic-ui-react.button": "file:./components/button",
     "@bit/semantic-org.semantic-ui-react.input": "file:./components/input",
-    "@bit/semantic-org.semantic-ui-react.list": "file:./components/list"
+    "@bit/semantic-org.semantic-ui-react.list": "file:./components/list",
+    "@bit/lodash.lodash.unique-id": "file:./components/unique-id",
+    "@bit/semantic-org.semantic-ui-react.internal.style-links": "file:./components/internal/style-links"
   },
   "scripts": {
     "start": "react-scripts start",
