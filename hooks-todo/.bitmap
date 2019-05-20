@@ -29,5 +29,93 @@
         "origin": "IMPORTED",
         "originallySharedDir": "src"
     },
+    "semantic-org.semantic-ui-react/list@0.86.0": {
+        "files": [
+            {
+                "name": "List.d.ts",
+                "relativePath": "elements/List/List.d.ts",
+                "test": false
+            },
+            {
+                "name": "List.js",
+                "relativePath": "elements/List/List.js",
+                "test": false
+            },
+            {
+                "name": "ListContent.d.ts",
+                "relativePath": "elements/List/ListContent.d.ts",
+                "test": false
+            },
+            {
+                "name": "ListContent.js",
+                "relativePath": "elements/List/ListContent.js",
+                "test": false
+            },
+            {
+                "name": "ListDescription.d.ts",
+                "relativePath": "elements/List/ListDescription.d.ts",
+                "test": false
+            },
+            {
+                "name": "ListDescription.js",
+                "relativePath": "elements/List/ListDescription.js",
+                "test": false
+            },
+            {
+                "name": "ListHeader.d.ts",
+                "relativePath": "elements/List/ListHeader.d.ts",
+                "test": false
+            },
+            {
+                "name": "ListHeader.js",
+                "relativePath": "elements/List/ListHeader.js",
+                "test": false
+            },
+            {
+                "name": "ListIcon.d.ts",
+                "relativePath": "elements/List/ListIcon.d.ts",
+                "test": false
+            },
+            {
+                "name": "ListIcon.js",
+                "relativePath": "elements/List/ListIcon.js",
+                "test": false
+            },
+            {
+                "name": "ListItem.d.ts",
+                "relativePath": "elements/List/ListItem.d.ts",
+                "test": false
+            },
+            {
+                "name": "ListItem.js",
+                "relativePath": "elements/List/ListItem.js",
+                "test": false
+            },
+            {
+                "name": "ListList.d.ts",
+                "relativePath": "elements/List/ListList.d.ts",
+                "test": false
+            },
+            {
+                "name": "ListList.js",
+                "relativePath": "elements/List/ListList.js",
+                "test": false
+            },
+            {
+                "name": "index.d.ts",
+                "relativePath": "elements/List/index.d.ts",
+                "test": false
+            },
+            {
+                "name": "index.js",
+                "relativePath": "elements/List/index.js",
+                "test": false
+            }
+        ],
+        "mainFile": "elements/List/index.js",
+        "rootDir": "components/list",
+        "origin": "IMPORTED",
+        "originallySharedDir": "src"
+    },
     "version": "14.1.1"
 }
