@@ -1,0 +1,27 @@
+{
+    "name": "@bit/semantic-org.semantic-ui-react.button",
+    "version": "0.86.0",
+    "homepage": "https://bit.dev/semantic-org/semantic-ui-react/button",
+    "main": "dist/elements/Button/index.js",
+    "dependencies": {
+        "classnames": "^2.2.6",
+        "lodash": "^4.17.11",
+        "prop-types": "^15.6.2",
+        "@bit/semantic-org.semantic-ui-react.icon": "0.86.0",
+        "@bit/semantic-org.semantic-ui-react.label": "0.86.0",
+        "@bit/semantic-org.semantic-ui-react.internal.genericd": "0.86.0",
+        "@bit/semantic-org.semantic-ui-react.ref": "0.86.0",
+        "@bit/semantic-org.semantic-ui-react.internal.utils.index": "0.86.0"
+    },
+    "devDependencies": {},
+    "peerDependencies": {
+        "react": "^16.3.0"
+    },
+    "componentRootFolder": "components/button",
+    "license": "SEE LICENSE IN LICENSE",
+    "bit": {
+        "env": {
+            "compiler": "semantic-org.semantic-ui-react-compiler/compilers/react@1.0.3"
+        }
+    }
+}
