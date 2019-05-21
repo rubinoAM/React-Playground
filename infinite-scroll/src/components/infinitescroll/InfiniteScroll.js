@@ -17,7 +17,7 @@ class InfiniteScroll extends React.Component{
             .then(resp => resp.json())
             .then(json => {    
                 this.setState({
-                    data:json.data,
+                    data:[...data, ...json.data],
                     scrolling:false,
                     total_pages: json.total_pages
                 });
