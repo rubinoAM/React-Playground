@@ -24,25 +24,41 @@ class InfiniteScroll extends React.Component{
             });
     }
 
+    loadMore = () => {
+        this.setState(
+            prevState => ({
+                page:prevState.page + 1,
+                scrolling:true
+            }),
+            this.loadUser
+        );
+    }
+
     componentDidMount(){
         this.loadUser();
     }
 
     render(){
         return (
-            <ul>
-                {this.state.data.map(data => (
-                    <li key={data.id}>
-                        <div>
+            <div>
+                <ul>
+                    {this.state.data.map(data => (
+                        <li key={data.id}>
                             <div>
-                                <img src={data.avatar} alt={data.id}/>
+                                <div>
+                                    <img src={data.avatar} alt={data.id}/>
+                                </div>
+                                <div>{data.first_name}</div>
+                                <div>{data.last_name}</div>
                             </div>
-                            <div>{data.first_name}</div>
-                            <div>{data.last_name}</div>
-                        </div>
-                    </li>
-                ))}
-            </ul>
+                        </li>
+                    ))}
+                </ul>
+                <button
+                    onClick={ e => {this.loadMore();} }>
+                    Load More
+                </button>
+            </div>
         );
     }
 }
