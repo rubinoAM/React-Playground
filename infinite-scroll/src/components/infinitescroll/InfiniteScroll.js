@@ -11,10 +11,39 @@ class InfiniteScroll extends React.Component{
 
     loadUser = () => {
         const { per, page, data } = this.state;
+        const url = `https://reqres.in/api/users?per_page=${per}&page=${page}`;
+
+        fetch(url)
+            .then(resp => resp.json())
+            .then(json => {    
+                this.setState({
+                    data:json.data,
+                    scrolling:false,
+                    total_pages: json.total_pages
+                });
+            });
+    }
+
+    componentDidMount(){
+        this.loadUser();
     }
 
     render(){
-        return <div />;
+        return (
+            <ul>
+                {this.state.data.map(data => (
+                    <li key={data.id}>
+                        <div>
+                            <div>
+                                <img src={data.avatar} alt={data.id}/>
+                            </div>
+                            <div>{data.first_name}</div>
+                            <div>{data.last_name}</div>
+                        </div>
+                    </li>
+                ))}
+            </ul>
+        );
     }
 }
 
