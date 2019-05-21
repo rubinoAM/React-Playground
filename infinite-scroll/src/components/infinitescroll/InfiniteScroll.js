@@ -34,8 +34,21 @@ class InfiniteScroll extends React.Component{
         );
     }
 
+    handleScroll = () => {
+        let lastLi = document.querySelector("ul > li:last-child");
+        let lastLiOffset = lastLi.offsetTop + lastLi.clientHeight;
+        let pageOffset = window.pageYOffset + window.innerHeight;
+
+        if(pageOffset > lastLiOffset){
+            this.loadMore();
+        }
+    }
+
     componentDidMount(){
         this.loadUser();
+        this.scrollListener = window.addEventListener("scroll", e => {
+            this.handleScroll(e);
+        });
     }
 
     render(){
